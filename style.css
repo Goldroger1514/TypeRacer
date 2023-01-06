@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  background-color: #000017;
+  color: aliceblue;
+}
+.playground{
+  width: 700px;
+  margin: auto;
+  background: #333;
+  padding: 15px;
+}
+.text{
+  color: #ffffff;
+  line-height: 1.4;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bold;
+}
+.input{
+  margin: 10px auto;
+}
+.input input{
+  width: 100%;
+  background: #222222;
+  outline: none;
+  border: none;
+  padding: 10px 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-family: monospace;
+  font-size: 18px;
+}
+.time{
+  text-align: center;
+  font-family: monospace;
+  font-size: 18px;
+}
+.true{
+  color: green;
+}
+.false{
+  color: red;
+}
+.current::after{
+  height: 100%;
+  background: white;
+  display: inline-block;
+}
+span.on + span::before{
+  content: '|';
+  font-size: 17px;
+  color: white;
+}
